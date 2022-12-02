@@ -22,7 +22,7 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5) a
 
         # Set flag
         image.flags.writeable = False
-
+ 
         # Detections
         results = hands.process(image)
 
