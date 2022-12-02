@@ -1,3 +1,4 @@
+#import libraries
 import mediapipe as mp
 import cv2
 import numpy as np
@@ -7,7 +8,7 @@ import os
 mp_drawing = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)  #access camera
 
 with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5) as hands:
     while cap.isOpened():
@@ -44,7 +45,7 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5) a
 
         cv2.imshow('Hand Landmark', image)
 
-        if cv2.waitKey(10) & 0xFF == ord('q'):
+        if cv2.waitKey(10) & 0xFF == ord('q'):  #camera terminate
             break
 
 cap.release()
