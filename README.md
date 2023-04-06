@@ -1,2 +1,2 @@
 # PythonML_Examples
-Python examples, solutions. Included with Machine Learning too.
+Different type of solutions using Python.
