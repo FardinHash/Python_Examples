@@ -3,12 +3,12 @@ import mediapipe as mp
 import cv2
 import numpy as np
 import uuid
-import os
+import os  
 
 mp_drawing = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
 
-cap = cv2.VideoCapture(0)  #access camera
+cap = cv2.VideoCapture(0)  #accessing the camera
 
 with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5) as hands:
     while cap.isOpened():
