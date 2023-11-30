@@ -1,3 +1,4 @@
+# libraries
 import pyqrcode
 import png
 
