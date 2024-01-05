@@ -3,7 +3,7 @@ import tensorflow.keras
 from PIL import Image, ImageOps
 import numpy as np
 import cv2
-
+ 
 str = ''
 faceCascade = cv2.CascadeClassifier('resource/haarcascade_frontalface_default.xml')
 
