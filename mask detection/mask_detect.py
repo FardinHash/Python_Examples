@@ -1,6 +1,6 @@
 
 
-str = ''
+str = '' 
 faceCascade = cv2.CascadeClassifier('resource/haarcascade_frontalface_default.xml')
  
 np.set_printoptions(suppress=True)
