@@ -1,4 +1,4 @@
-# libraries
+
 
 str = ''
 faceCascade = cv2.CascadeClassifier('resource/haarcascade_frontalface_default.xml')
