@@ -2,7 +2,7 @@
 
 str = ''
 faceCascade = cv2.CascadeClassifier('resource/haarcascade_frontalface_default.xml')
-
+ 
 np.set_printoptions(suppress=True)
 model = tensorflow.keras.models.load_model('resource/keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
