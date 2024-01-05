@@ -1,12 +1,8 @@
 # libraries
-import tensorflow.keras
-from PIL import Image, ImageOps
-import numpy as np
-import cv2
- 
+
 str = ''
 faceCascade = cv2.CascadeClassifier('resource/haarcascade_frontalface_default.xml')
-
+ 
 np.set_printoptions(suppress=True)
 model = tensorflow.keras.models.load_model('resource/keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
@@ -38,4 +34,4 @@ while True:
         cv2.imshow('Result', img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
+        break 
